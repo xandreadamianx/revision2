@@ -1,5 +1,5 @@
 body {
-  background: #f0c27b; /* fallback for old browsers */
+  background: #f0c27b; /* Fallback for old browsers */
   background: -webkit-linear-gradient(to right, #f0c27b, #4b1248); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #f0c27b, #4b1248); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
@@ -11,25 +11,33 @@ body {
   width: 400px;
 }
 
-.formulario input, select {
+.formulario input,
+.formulario select {
   border: none;
-  height: 20px;
+  height: 30px; /* Aumenté un poco la altura para mejorar la usabilidad */
   border-radius: 5px;
+  padding: 5px; /* Añadí un poco de padding para el texto */
+  margin-bottom: 10px; /* Espaciado entre los elementos del formulario */
 }
 
 .error {
   background-color: red;
 }
 
-.elemento-lista {
+.elemento-lista {  
   color: #4b1248;
   font-family: Verdana;
-  margin: 10px 0;
+  margin: 20px 0; 
   border: 5px solid #4b1248;
   border-radius: 5px;
-  padding: 0 5px;
+  padding: 10px; /* Añadí más padding para mejorar el diseño */
   width: 400px;
-  margin: 20px
+  opacity: 0.7; /* Démosle un poco de opacidad */
+  transition: opacity 0.3s ease; 
+}
+
+.elemento-lista:hover {
+  opacity: 1; /* Se vuelve completamente opaco al pasar el mouse */
 }
 
 .elemento-lista input {

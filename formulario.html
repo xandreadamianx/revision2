@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" media="screen" href="./styles.css">
   <title>Formulario</title>
 </head>
+
 <body>
   <h1>Bienvenidos a mi fiesta</h1>
   <h2>Por favor, confirmar asistencia:</h2>
@@ -15,9 +16,8 @@
   <form class="formulario">
     Nombre <input type="text" name="name" id="name">
     <br />
-    Edad <input type="number" name="age" id="age">
+    Edad <input type="number" id="edad" name="edad" min="18" max="90">
     <br />
-
     Nacionalidad
     <select name="nationality" id="nationality">
       <option value="ar">Argentina</option>
@@ -29,12 +29,10 @@
     <input type="submit">
   </form>
 
-  <div>
-    <h2>Lista de invitados</h2>
+  <h2>Lista de invitados</h2>
+  <div id="lista-de-invitados"></div> <!-- Aquí se mostrará la lista de invitados, con esto hay que hacer unos contenedores en js para meter los datos -->
 
-  </div>
-
-  <script src="../formulario.js"></script>
+  <script src="formulario.js"></script>
 </body>
 
 </html>
